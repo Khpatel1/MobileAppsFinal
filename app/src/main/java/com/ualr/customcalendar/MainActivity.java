@@ -45,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
 
             mySQLiteDBHandler dbHandler = new mySQLiteDBHandler(this, "CalendarDataBase", null, 1);
             sqLiteDataBse = dbHandler.getWritableDatabase();
-            sqLiteDataBse.execSQL("CREATE TABLE EventCalendar (Date TEXT, Event TEXT)");
         }
         catch (Exception e) {
             e.printStackTrace();
